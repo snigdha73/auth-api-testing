@@ -13,7 +13,7 @@ chai.should();
 describe("Users", () => {
     describe("GET /", () => {
         
-        it("should get all users", (done) => {
+        it("should get all users", () => {
             chai.request(app)
             .get('/')
             .end((err, res) => {
@@ -21,11 +21,10 @@ describe("Users", () => {
                 const arr = res.body;
                 expect(res.body).to.be.an('array');
                 expect(arr[0]).to.be.a('object');
-                done();
             });
         });
         
-        it("should get a single user", (done) => {
+        it("should get a single user", () => {
             const id = 'mm@com';
             chai.request(app)
             .get(`/${id}`)
@@ -33,18 +32,17 @@ describe("Users", () => {
                 res.should.have.status(200);
                 res.body.should.be.a('string');
                 res.body.should.include('@');
-                done();
+        
             });
         });
         
         
-        it("should not get a single user record", (done) => {
+        it("should not get a single user record", () => {
             const id = 'kk@com';
             chai.request(app)
             .get(`/Users/get/${id}`)
             .end((err, res) => {
                 res.should.have.status(404);
-                done();
             });
         });
     });
