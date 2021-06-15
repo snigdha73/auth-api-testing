@@ -1,5 +1,4 @@
-// Import the dependencies for testing
-import { json } from 'body-parser';
+
 import chai from 'chai';
 import chaiHttp from 'chai-http';
 import app from '../auth';
@@ -32,7 +31,7 @@ describe("Users", () => {
                 res.should.have.status(200);
                 res.body.should.be.a('string');
                 res.body.should.include('@');
-        
+                
             });
         });
         
