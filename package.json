@@ -1,0 +1,36 @@
+{
+  "name": "jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "auth.js",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha --require babel-register authAPItest/*.js --exit",
+    "dev": "nodemon --exec babel-node --presets babel-preset-env./auth.js",
+    "start": "node auth.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "chai-like": "^1.1.1",
+    "chai-things": "^0.2.0",
+    "eslint": "^7.28.0",
+    "express": "4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moch": "^0.0.1",
+    "mongoose": "^5.12.13"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^2.0.7"
+  },
+  "author": "",
+  "license": "ISC"
+}
