@@ -21,7 +21,6 @@ describe("Users", () => {
                 const arr = res.body;
                 expect(res.body).to.be.an('array');
                 expect(arr[0]).to.be.a('object');
-                
                 done();
             });
         });
