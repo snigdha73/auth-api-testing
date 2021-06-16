@@ -1,5 +1,10 @@
 import getController from '../controllers/getcontrollers';
 import app from '../auth';
+import {Router} from 'express';
 
-app.get('/', getController.getAllUser);
-app.get('/:id', getController.getUserById);
+const routes = Router();
+
+routes.get('/', getController.getAllUser);
+routes.get('/:id', getController.getUserById);
+
+export default routes;
