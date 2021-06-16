@@ -2,6 +2,7 @@
 "env": {
   "commonjs": true,
   "node": true,
-  "mocha": true
+  "mocha": true,
+  "mongodb": true
 }
 }
