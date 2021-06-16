@@ -3,6 +3,6 @@
   "commonjs": true,
   "node": true,
   "mocha": true,
-  "mongodb": true
+  "mongo": true
 }
 }
