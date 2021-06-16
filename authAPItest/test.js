@@ -1,17 +1,12 @@
-/* eslint-disable import/named */
-/* eslint-disable import/no-named-as-default */
-/* eslint-disable no-undef */
 import chai from 'chai';
 import chaiHttp from 'chai-http';
-// eslint-disable-next-line import/no-named-as-default
-// eslint-disable-next-line import/no-named-as-default-member
 import app from '../auth';
 
 const { expect } = chai;
 
 chai.use(require('chai-like'));
 chai.use(require('chai-things'));
-// Configure chai
+
 chai.use(chaiHttp);
 chai.should();
 
