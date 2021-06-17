@@ -5,7 +5,7 @@
   "main": "auth.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --require babel-register authAPItest/gettest.js --exit",
+    "test": "mocha --require babel-register authAPItest/*.js --exit",
     "dev": "nodemon --exec babel-node --preset babel-preset-env./auth.js"
   },
   "standard": {
