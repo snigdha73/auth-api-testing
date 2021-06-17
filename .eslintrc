@@ -3,7 +3,7 @@
   "commonjs": true,
   "node": true,
   "mocha": true,
-  "mongodb":true,
+  "mongo":true,
   "mongo/server-side": true,
   "mongo/shell": true
 },
