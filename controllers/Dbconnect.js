@@ -17,6 +17,7 @@ const userSchema = new mongoose.Schema({
   },
 });
 
+// eslint-disable-next-line new-cap
 const User = new mongoose.model('User', userSchema);
 
 export default User;
